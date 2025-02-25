@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Modak;
+    src: url(/default/font/Modak-Regular.ttf);
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(/default/font/Prompt-Black.ttf);
+}
+
+#full_footer
+{
+    background-color: #79B2DA;
+    color: #3F120F;
+    width: 100%;
+    font-family: Prompt;
+    font-size: 15px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+#full_footer ul li a
+{
+    color: #3F120F;
+}
+
+#full_footer ul li a:hover
+{
+    color: #2D55A6;
+}
+
+.tittle
+{
+    font-family: Modak;
+    color: #F2E9DF;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+

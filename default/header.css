@@ -1,0 +1,77 @@
+@font-face {
+    font-family: Modak;
+    src: url(/default/font/Modak-Regular.ttf);
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(/default/font/Prompt-Black.ttf);
+}
+
+#default_header
+{
+    background-color: #EEB8B6;
+    font-family: Prompt;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#nav_tittle
+{
+    font-family: Modak;
+    font-size: 50px;
+    color: #F2E9DF;
+}
+
+#nav_tittle:hover
+{
+    color: #CA4727;
+}
+
+#logo_nav
+{
+    max-width: 150px;
+}
+
+#btn_nav
+{
+    color: #F2E9DF;
+    text-transform: uppercase;
+    background-color: #CA4727;
+    border: none;
+}
+
+#btn_nav:hover
+{
+    color: #CA4727;
+    background-color: #F2E9DF;
+}
+
+#input_nav
+{
+    background-color: #F2E9DF;
+    text-transform: uppercase;
+    border: none;
+}
+
+.navbar-nav > li >a
+{
+    color: #F2E9DF;
+}
+
+.navbar-nav > li:hover >a,
+.navbar-nav > li.active >a
+{
+    color: #CA4727;
+}
+
+#toggler_nav
+{
+    color: #CA4727;
+    background-color: #F2E9DF;
+}
+
+#icon_toggler img
+{
+    width: 30px;
+}

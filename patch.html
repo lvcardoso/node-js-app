@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Atualizar Carro</title>
+</head>
+<body>
+  <button onclick="atualizarCarro()">Atualizar Carro</button>
+
+  <script>
+    // Obtém o ID do carro da URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const carroId = urlParams.get('id');
+    
+    // Use o ID para buscar os detalhes do carro no banco de dados ou realizar outras ações
+    console.log("Detalhes do Carro ID: " + carroId);
+    function atualizarCarro() {
+      // Dados do carro a serem atualizados
+      var carroAtualizado = {
+        Id: carroId,
+        Fabricante: "VW",
+        Ano: 1991,
+        Marca: "Gol GTI",
+        Cidade: "Belo Horizonte",
+        Imagem: "https://lartbr.com.br/wp-content/uploads/2022/11/IMG_5591.jpg"
+      };
+
+      // Criar objeto de requisição
+      var xhttp = new XMLHttpRequest();
+
+      // Configurar requisição
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {
+            // Atualização bem-sucedida
+            alert("Carro atualizado com sucesso!");
+          } else {
+            // Erro na atualização
+            alert("Erro ao atualizar o carro. Status: " + this.status);
+          }
+        }
+      };
+
+      // Abrir conexão e enviar requisição para atualizar o carro
+      xhttp.open("PATCH", "http://localhost:8090/api/carros/");
+      xhttp.setRequestHeader("Content-type", "application/json");
+
+      // Enviar os dados para atualização
+      xhttp.send(JSON.stringify(carroAtualizado));
+    }
+  </script>
+</body>
+</html>

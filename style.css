@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Modak;
+    src: url(/default/font/Modak-Regular.ttf);
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(/default/font/Prompt-Black.ttf);
+}
+
+#box_cars
+{
+    font-family: Prompt;
+    display: inline-block;
+}
+
+body h1, h2, h3, h4
+{
+    font-family: Modak;
+    text-transform: uppercase;
+    color: #CA4727;
+}
+
+.cars
+{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(autofit, 400px);
+    
+}
+
+.cars h2
+{
+    text-align: center;
+}
+
+.car-img
+{
+    margin-left: 22%;
+    width: 150px;
+    max-height: 200px;
+    min-height: 200px;
+}
+
+.cars p
+{
+    text-align: justify;
+}
+
+.cars .cars_itens
+{
+    border-radius: 8px;
+    border-style: solid;
+    padding: 15px;
+    width: 300px;
+    margin: 10px;
+    height: 450px;
+}
+
+.cars .car-desc
+{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.price-cars
+{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.add-cart
+{
+    width: 45%;
+    background-color: #ffffff;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 8px;
+}
+
+.cart-icon
+{
+    max-width: 30px;
+}
