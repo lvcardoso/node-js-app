@@ -1,4 +1,4 @@
-var config = require('./dbconfig');
+var config = require('./db');
 const sql = require('mssql');
 
 async function getCarros(){
